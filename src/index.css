@@ -28,3 +28,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@keyframes scroll-hint {
+  0%   { transform: translateY(0);   opacity: 1; }
+  30%  { transform: translateY(8px); opacity: 1; }
+  60%  { transform: translateY(0);   opacity: 1; }
+  85%  { transform: translateY(4px); opacity: 0.6; }
+  100% { transform: translateY(0);   opacity: 0; }
+}
+
+.scroll-indicator {
+  animation: scroll-hint 3s ease forwards;
+}

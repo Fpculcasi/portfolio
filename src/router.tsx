@@ -1,14 +1,24 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 import HomePage from './pages/HomePage'
 import CaseStudyPage from './pages/CaseStudyPage'
+
+function AnimatedRoutes() {
+  const location = useLocation()
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/case/:slug" element={<CaseStudyPage />} />
+      </Routes>
+    </AnimatePresence>
+  )
+}
 
 export default function Router() {
   return (
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/case/:slug" element={<CaseStudyPage />} />
-      </Routes>
+      <AnimatedRoutes />
     </HashRouter>
   )
 }

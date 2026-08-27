@@ -1,12 +1,31 @@
+import { motion } from 'framer-motion'
+import { pageVariants } from '../lib/animations'
+import NavBar from '../components/NavBar'
+import HeroSection from '../components/HeroSection'
+import ProjectCardsSection from '../components/ProjectCardsSection'
+import AboutSection from '../components/AboutSection'
+import SkillsSection from '../components/SkillsSection'
+import ContactSection from '../components/ContactSection'
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-bg text-foreground font-sans p-8">
-      <h1 className="text-heading font-semibold text-accent">
-        Smart devices feel like magic. I build what&apos;s behind them.
-      </h1>
-      <p className="text-body text-muted mt-4">
-        Backend Engineer · IoT · Distributed Systems · Cloud · AI Integration
-      </p>
-    </main>
+    <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
+      <NavBar />
+      <main>
+        <HeroSection />
+        <ProjectCardsSection />
+        <AboutSection />
+        <SkillsSection />
+        <ContactSection />
+      </main>
+      <footer className="py-8 text-center text-caption text-muted border-t border-border">
+        © 2026 FPCulcasi · Built with React (<a href="https://github.com/Fpculcasi/portfolio" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Repo</a>)
+      </footer>
+    </motion.div>
   )
 }
