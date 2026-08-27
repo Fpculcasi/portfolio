@@ -16,10 +16,10 @@ export default function HeroSection() {
         <motion.div variants={containerVar} initial="hidden" animate="visible">
           <h1 className="text-hero font-bold leading-tight">
             <motion.span className="block text-foreground" variants={lineVar}>
-              Smart devices feel like magic...
+              Smart devices feel like magic.
             </motion.span>
             <motion.span className="block text-accent" variants={lineVar}>
-              I study, design &amp; build what&apos;s behind them
+              I study, design &amp; build what&apos;s behind them.
             </motion.span>
           </h1>
         </motion.div>

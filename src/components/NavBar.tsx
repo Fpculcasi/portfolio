@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 
 export default function NavBar() {
   const [open, setOpen] = useState(false)
@@ -12,9 +10,14 @@ export default function NavBar() {
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link
             to="/"
-            className="text-foreground font-semibold text-body hover:text-accent transition-colors"
+            className="flex items-center gap-2"
           >
-            FPCulcasi
+            <img
+              src="/logo/Gemini_Generated_Image_bnnnjqbnnnjqbnnn.png"
+              alt="FPCulcasi logo"
+              className="h-16 w-16 object-contain"
+            />
+            <span className="text-foreground font-semibold text-body">FPCulcasi</span>
           </Link>
 
           {/* Desktop links */}
@@ -25,7 +28,7 @@ export default function NavBar() {
               rel="noopener noreferrer"
               className="text-muted text-caption hover:text-accent transition-colors"
             >
-              <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+              GitHub
             </a>
             <a
               href="/cv.pdf"
