@@ -20,7 +20,7 @@ export default function NavBar() {
           {/* Desktop links */}
           <div className="hidden sm:flex items-center gap-6">
             <a
-              href="https://github.com/fpculcasi"
+              href="https://github.com/Fpculcasi"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted text-caption hover:text-accent transition-colors"
@@ -55,7 +55,7 @@ export default function NavBar() {
           onClick={() => setOpen(false)}
         >
           <a
-            href="https://github.com/fpculcasi"
+            href="https://github.com/Fpculcasi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground text-heading hover:text-accent transition-colors"

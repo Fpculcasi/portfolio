@@ -13,7 +13,7 @@ const LINKS = [
   },
   {
     label: 'GitHub',
-    href: 'https://github.com/fpculcasi',
+    href: 'https://github.com/Fpculcasi',
     display: 'GitHub',
     icon: faGithub,
   },
