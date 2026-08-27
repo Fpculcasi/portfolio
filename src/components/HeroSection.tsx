@@ -41,13 +41,13 @@ export default function HeroSection() {
           animate="visible"
           transition={{ delay: shouldReduce ? 0 : 0.5 }}
         >
-          <a
-            href="#projects"
+          <button
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             className="inline-block border border-accent text-accent px-6 py-3 text-body font-medium
                        hover:bg-accent/10 transition-colors duration-200"
           >
             View Projects ↓
-          </a>
+          </button>
         </motion.div>
       </div>
 
