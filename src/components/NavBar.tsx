@@ -13,7 +13,7 @@ export default function NavBar() {
             className="flex items-center gap-2"
           >
             <img
-              src="/logo/Gemini_Generated_Image_bnnnjqbnnnjqbnnn.png"
+              src="/logo/logo.svg"
               alt="FPCulcasi logo"
               className="h-16 w-16 object-contain"
             />

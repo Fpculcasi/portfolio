@@ -17,7 +17,7 @@ export default function ProjectCard({ slug, title, tagline, tags }: Props) {
     <motion.article
       variants={shouldReduce ? fadeUpReduced : fadeUp}
       className="bg-surface border border-border rounded-sm p-6 flex flex-col gap-4
-                 hover:border-accent hover:[box-shadow:0_0_0_1px_#64ffda,0_8px_32px_rgba(100,255,218,0.08)]
+                 hover:border-accent hover:[box-shadow:0_0_0_1px_var(--color-accent),0_8px_32px_var(--color-accent-glow)]
                  transition-[border-color,box-shadow] duration-200 ease-in-out"
     >
       <h3 className="text-sub text-foreground font-semibold">{title}</h3>
