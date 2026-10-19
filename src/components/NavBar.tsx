@@ -31,7 +31,15 @@ export default function NavBar() {
               GitHub
             </a>
             <a
-              href="/cv.pdf"
+              href="https://medium.com/@fpculcasi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted text-caption hover:text-accent transition-colors"
+            >
+              Medium
+            </a>
+            <a
+              href="downloads/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted text-caption hover:text-accent transition-colors"

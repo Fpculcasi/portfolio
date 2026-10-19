@@ -80,12 +80,12 @@ export default function HeroSection() {
               transition={{ delay: shouldReduce ? 0 : 0.7 }}
             >
               <div>
-                <h3 className="text-[2.5rem] font-bold text-foreground leading-none">98%</h3>
-                <p className="text-muted text-sm mt-2">Satisfaction Rate</p>
+                <h3 className="text-[2.5rem] font-bold text-foreground leading-none">25+</h3>
+                <p className="text-muted text-sm mt-2">Professional Projects</p>
               </div>
               <div>
-                <h3 className="text-[2.5rem] font-bold text-foreground leading-none">10+</h3>
-                <p className="text-muted text-sm mt-2">YoE on professional IoT Projects</p>
+                <h3 className="text-[2.5rem] font-bold text-foreground leading-none">6+</h3>
+                <p className="text-muted text-sm mt-2">Years of Experience</p>
               </div>
             </motion.div>
           </div>

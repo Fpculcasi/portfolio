@@ -24,10 +24,22 @@ export default function AboutSection() {
             About
           </motion.p>
           <motion.p className="text-body text-foreground leading-relaxed max-w-2xl" variants={variant}>
-            I&apos;m a backend engineer with six years building production systems across IoT, distributed
-            services, cloud infrastructure, and AI integration — at Reply consultancy, for enterprise
-            clients spanning automotive, industrial, and consumer tech. I care about systems that hold
-            up under real load, real constraints, and real consequences.
+            MSc in <a href="https://computer.ing.unipi.it/en/masters-degree-in-computer-engineering/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Computer Engineering (LM-32)</a>, University of Pisa, Italy, specializing in Computers
+            and Sensors Networks. Graduated with a score of 110/110, defending a thesis on the design
+            and implementation of a deep learning-based system for sleep quality assessment from using
+            patients' sleep ballistocardiography data series.
+          </motion.p>
+          <motion.p className="text-body text-foreground leading-relaxed max-w-2xl mt-6" variants={variant}>
+            Working at <a href="https://www.reply.com/concept-reply/en" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Concept Engineering Reply</a> since 2019, shipping production systems for clients across
+            automotive, industrial, and consumer tech, contexts where a bad deploy stops a factory
+            line, grounds a device, or quietly costs a company its users. That shaped how I work:
+            I care about systems that hold up under real load, real constraints, and real
+            consequences (not just to look clean in a slide deck 😉).
+          </motion.p>
+          <motion.p className="text-body text-foreground leading-relaxed max-w-2xl mt-6" variants={variant}>
+            The design eye came first, actually. Years spent studying Clean Code/Architecture and 
+            obsessing over craft before I touched a backend. That instinct still shows up in how
+            I shape APIs, name things, and decide what to leave out.
           </motion.p>
         </motion.div>
       </div>
